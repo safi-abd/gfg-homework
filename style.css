@@ -240,6 +240,7 @@ h2
     height: fit-content;
     border-radius:5px;
     font-family: 'poppins';
+    transition: .3s;
 }
 .pb-grid-box h3
 {
@@ -253,4 +254,8 @@ h2
     color: #d1d1d1;
     font-size: 14px;
 }
-
+.pb-grid-box:hover
+{
+    border: 0.5px solid #ddd;
+    background-color: #dddddd3d;
+}
