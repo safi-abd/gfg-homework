@@ -1,0 +1,256 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+body
+{
+    background-image: linear-gradient(#101010, #34003e);
+    padding: 0;
+    margin: 0;
+}
+nav
+{
+    background-color: #1010104a;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    padding: 10px 20px;
+    border-bottom:0.5px solid #dddddd33 ;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+nav .logo-wrap
+{
+    padding: 0px 10px;
+    width: 25%;
+}
+nav .logo-wrap .logo
+{
+    font-family: 'poppins', sans-serif;
+    color: #ddd;
+    border: 0.5px solid #dddddd4e;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.menu
+{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+nav form
+{
+    margin: 0;
+    width: 50%;
+    display: flex;
+}
+nav form input
+{
+    background-color: #ffffff00;
+    border: 1px solid #dddddd33;
+    border-right: none;
+    outline: none;
+    width: 92%;
+    padding: 5px 10px;
+    border-radius: 5px 0px 0px 5px;
+    color: #fefefe;
+    transition: .3s;
+    font-family: 'poppins';
+}
+nav form input:focus
+{
+    border: 1px solid #dddddd72;
+    border-right: none;
+}
+nav form button
+{
+    width: 8%;
+    background-color: #ffffff00;
+    border: 1px solid #dddddd33;
+    border-left: none;
+    color: #fefefe;
+    font-weight: 100;
+    outline: none;
+    border-radius: 0px 5px 5px 0px;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 100,
+    'GRAD' 200,
+    'opsz' 48;
+    transition: .3s;
+}
+nav form button:hover
+{
+    border: 1px solid #dddddd72;
+    border-left: none;
+}
+.menu ul
+{
+    font-family: 'poppins';
+    font-size: 15px;
+    list-style-type: none;
+    display:flex;
+    margin: 0;
+    justify-content: right;
+    align-items:center ;
+    width: fit-content;
+    float: right;
+}
+.menu ul li a
+{
+    text-decoration: none;
+    color: #ddd;
+    display: inline-block;
+}
+.menu ul li:not(:last-child)
+{
+    margin-right: 20px;
+}
+.menu ul a.button
+{
+    text-decoration: none;
+    color: #fefefe;
+    border: 0.5px solid #dddddd53;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    overflow: hidden;
+    transition: .3s;
+}
+.menu ul a.button::before
+{
+    content: ' ';
+    width: 100%;
+    height:0;
+    background-color: #ddd;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: .3s;
+}
+.menu ul a.button:hover:before
+{
+    height: 100%;
+    background-color: #fefefe;
+}
+.menu ul a.button:hover
+{
+    color: #101010;
+}
+h1
+{
+    text-align: center;
+    line-height: 100vh;
+    color: #fefefe;
+    font-family: 'poppins';
+}
+h2
+{
+    font-family: 'poppins';
+    color: #ddd;
+    font-size: 3rem;
+    text-align: center;
+}
+.pb-wrap
+{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 30px;
+}
+.pb-cont
+{
+    width: 40%;
+    height: 100%;
+    border: 0.5px solid #dddddd33;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.pb-cont .pb-header
+{
+    width: 100%;
+    padding: 10px;
+    border-bottom: 0.5px solid #dddddd33;
+}
+.pb-cont .pb-header form
+{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'poppins'; 
+}
+.pb-cont .pb-header form input
+{
+    background-color: #ffffff00;
+    border: 0.5px solid #dddddd33;
+    outline: none;
+    width: 84%;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #fff;
+    transition: 0.3s;
+}
+.pb-cont .pb-header form input:focus
+{
+    border: 0.5px solid #dddddd8b;
+}
+.pb-cont .pb-header form button
+{
+    width: 15%;
+    background-color: #10101000;
+    border: 0.5px solid #dddddd33;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    transition: 0.3s;
+}
+.pb-cont .pb-header form button:hover
+{
+    background-color: #fff;
+    color: #101010;
+}
+.pb-content
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 10px 70px;
+    grid-gap: 10px;
+    overflow: auto;
+}
+.pb-content::-webkit-scrollbar
+{
+    background-color: #00000000;
+    width: 5px;
+}
+.pb-content::-webkit-scrollbar-thumb
+{
+    background-color: #dddddd33;
+}
+.pb-grid-box
+{
+    padding: 10px;
+    border: 0.5px solid #dddddd33;
+    height: fit-content;
+    border-radius:5px;
+    font-family: 'poppins';
+}
+.pb-grid-box h3
+{
+    color: #ddd;
+    font-size: 18px;
+    margin: 0;
+}
+.pb-grid-box span
+{
+    display: block;
+    color: #d1d1d1;
+    font-size: 14px;
+}
+
